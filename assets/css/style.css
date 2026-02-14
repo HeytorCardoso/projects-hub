@@ -162,7 +162,7 @@ a {
     gap: 0.5em;
 }
 
-/* 🔹 BOTÕES ABOUT */
+/* BOTÕES ABOUT */
 .about-buttons {
     display: flex;
     flex-direction: row; /* 🔹 força linha também no mobile */
