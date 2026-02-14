@@ -171,7 +171,7 @@ a {
 
 .contact-button,
 .projects-button {
-    min-width: 11em;
+    min-width: 9.5em;
     white-space: nowrap; /* 🔹 impede quebra de texto */
 }
 
@@ -329,7 +329,7 @@ a {
 }
 
 .redirect-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: #737373;
 }
 
