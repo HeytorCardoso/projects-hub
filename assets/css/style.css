@@ -5,6 +5,11 @@
     font-family: "Inter", sans-serif;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .sidebar {display: none;}
 
 @media (min-width:768px) {
@@ -24,7 +29,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2em;
+    padding: 0 1.2em;
     border-bottom: solid #e8e8e8 2px;
 }
 
@@ -33,9 +38,10 @@ a {
 }
 
 /* 🔹 MAIS ESPAÇO NO DESKTOP */
-@media (min-width:1024px) {
+@media (min-width:768px) {
     .div-header {
         justify-content: flex-end;
+        padding: 0 2em;
         gap: 2em; /* aumentado */
     }
 
@@ -162,7 +168,7 @@ a {
     flex-direction: row; /* 🔹 força linha também no mobile */
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: nowrap; /* 🔹 impede quebra */
+    flex-wrap: wrap; /* 🔹 impede quebra */
     width: min(1200px, 90%);
     margin: 0 auto;
     padding-bottom: 2em;
@@ -171,8 +177,16 @@ a {
 
 .contact-button,
 .projects-button {
-    min-width: 9.5em;
+    flex: 1 1 auto;
+    min-width: 0;
     white-space: nowrap; /* 🔹 impede quebra de texto */
+}
+
+@media (min-width:768px) {
+    .contact-button,
+    .projects-button {
+        max-width: 9.5em;
+    }
 }
 
 .contact-button {
